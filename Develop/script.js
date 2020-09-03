@@ -1,8 +1,12 @@
 //display current day and time at the top using moment.js & jquery. 
-//I added a separate ID for time so they could be stacked in the jumbotron
+//I added a separate ID for time so they could be stacked in the jumbotron or have it appear in a bootstrap modal if possible.. check mate!!!
 
 $("#currentDay").text("Today's date is " + moment().format('MMMM Do YYYY'));
 $("#currentTime").text("It is currently " + moment().format('h:mm:ss a'));
+
+  $('#myModal').on('click', function() {
+    $('#myModal').show();
+});
 
 //add presentTime var for color coding functionality. activity will indicate tense in a for loop
 //color-code time blocks past/present/future
